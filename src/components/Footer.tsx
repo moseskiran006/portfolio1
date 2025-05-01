@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             <a 
-              href="https://github.com/kirankumar" 
+              href="https://github.com/moseskiran006" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300"
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com/in/kirankumar" 
+              href="https://linkedin.com/in/moseskiran006" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300"
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
               <Twitter size={20} />
             </a>
             <a 
-              href="mailto:kirankumar@example.com" 
+              href="mailto:moseskiran006@gmail.com" 
               className="text-gray-400 hover:text-white transition-colors duration-300"
               aria-label="Email"
             >
