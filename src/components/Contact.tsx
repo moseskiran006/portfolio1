@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, Send, CheckCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({
@@ -9,12 +10,14 @@ const Contact: React.FC = () => {
     threshold: 0.1,
   });
 
+  const formRef = useRef<HTMLFormElement>(null);
+
   const [formState, setFormState] = useState({
     name: '',
     email: '',
     message: '',
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -28,18 +31,28 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormState({ name: '', email: '', message: '' });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
-    }, 1500);
+
+    emailjs
+      .sendForm(
+        'service_ru86ryd', // e.g., 'service_123abc'
+        'template_xit3nic', // e.g., 'template_xyz789'
+        formRef.current!,
+        'Z0kOiJINqlYdo6Nov' // e.g., 'XyzAbc123456789'
+      )
+      .then(() => {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        setFormState({ name: '', email: '', message: '' });
+
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      })
+      .catch((error) => {
+        console.error('EmailJS Error:', error);
+        setIsSubmitting(false);
+        alert('There was an error sending your message. Please try again later.');
+      });
   };
 
   return (
@@ -66,10 +79,9 @@ const Contact: React.FC = () => {
           className="max-w-2xl mx-auto"
         >
           <div className="glass-card p-8 relative overflow-hidden">
-            {/* Decorative elements */}
             <div className="absolute -top-24 -right-24 w-48 h-48 rounded-full bg-primary-600/20 blur-3xl"></div>
             <div className="absolute -bottom-24 -left-24 w-48 h-48 rounded-full bg-secondary-600/20 blur-3xl"></div>
-            
+
             <div className="relative z-10">
               <div className="flex items-center mb-8">
                 <div className="w-10 h-10 rounded-full bg-primary-900 flex items-center justify-center">
@@ -77,9 +89,9 @@ const Contact: React.FC = () => {
                 </div>
                 <h3 className="ml-4 text-xl font-semibold text-white">Send me a message</h3>
               </div>
-              
+
               {isSubmitted ? (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="bg-success-900/30 border border-success-700/30 rounded-lg p-4 flex items-center"
@@ -90,7 +102,7 @@ const Contact: React.FC = () => {
                   </p>
                 </motion.div>
               ) : (
-                <form onSubmit={handleSubmit}>
+                <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
                       Your Name
@@ -105,7 +117,7 @@ const Contact: React.FC = () => {
                       required
                     />
                   </div>
-                  
+
                   <div className="mb-4">
                     <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
                       Email Address
@@ -120,7 +132,7 @@ const Contact: React.FC = () => {
                       required
                     />
                   </div>
-                  
+
                   <div className="mb-6">
                     <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
                       Message
@@ -135,7 +147,7 @@ const Contact: React.FC = () => {
                       required
                     ></textarea>
                   </div>
-                  
+
                   <button
                     type="submit"
                     disabled={isSubmitting}

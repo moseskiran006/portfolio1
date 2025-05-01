@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
               <ArrowDown size={18} className="group-hover:translate-y-1 transition-transform" />
             </a>
             <a 
-              href="/resume.pdf" 
+              href="https://drive.google.com/file/d/1z_DYRiaLLHxDRLdVLU_Drxk3BIaEvde7/view?usp=sharing" 
               className="px-6 py-3 rounded-full bg-gray-800 hover:bg-gray-700 text-white font-medium transition-all duration-300 flex items-center justify-center gap-2 border border-gray-700"
               target="_blank"
               rel="noopener noreferrer"

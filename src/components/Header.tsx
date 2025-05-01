@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             ))}
             <li>
               <a
-                href="#resume"
+                href="https://drive.google.com/file/d/1z_DYRiaLLHxDRLdVLU_Drxk3BIaEvde7/view?usp=sharing"
                 className="px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-500 hover:to-primary-600 text-white rounded-full transition-all duration-300 text-sm font-medium"
               >
                 Resume
