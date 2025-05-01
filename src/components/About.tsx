@@ -65,12 +65,12 @@ const About: React.FC = () => {
                   AI/ML Engineer and NLP Specialist passionate about building intelligent systems that solve real-world problems.
                 </p>
                 <p className="text-gray-400 mb-6">
-                  Currently pursuing B.Tech in AI & DS at IIITDM Kurnool, I specialize in developing AI solutions across computer vision, natural language processing, and machine learning systems. I'm particularly interested in multimodal AI and large language models.
+                  Graduated B.Tech Student  in AI & DS at IIITDM Kurnool, I specialize in developing AI solutions across computer vision, natural language processing, and machine learning systems. I'm particularly interested in multimodal AI and large language models.
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
                   <a 
-                    href="https://github.com/kirankumar" 
+                    href="https://github.com/moseskiran006" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 hover:border-primary-500 hover:bg-primary-900/20 transition-all duration-300"
@@ -79,7 +79,7 @@ const About: React.FC = () => {
                     <span>GitHub</span>
                   </a>
                   <a 
-                    href="https://linkedin.com/in/kirankumar" 
+                    href="https://linkedin.com/in/moseskiran006" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 hover:border-primary-500 hover:bg-primary-900/20 transition-all duration-300"
@@ -88,7 +88,7 @@ const About: React.FC = () => {
                     <span>LinkedIn</span>
                   </a>
                   <a 
-                    href="mailto:kirankumar@example.com" 
+                    href="mailto:moseskiran006@gmail.com" 
                     className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 hover:border-primary-500 hover:bg-primary-900/20 transition-all duration-300"
                   >
                     <Mail size={18} />

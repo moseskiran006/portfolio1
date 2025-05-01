@@ -22,27 +22,27 @@ const projectsData: ProjectItem[] = [
     imageUrl: "https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     tags: ["NLP", "Summarization", "AWS"],
     technologies: ["BART", "spaCy", "AWS Lambda", "Python", "FastAPI"],
-    github: "https://github.com/kirankumar/ai-news-bot",
-    demo: "https://news-bot.example.com",
-  },
-  {
-    id: 2,
-    title: "Multimodal AI Platform",
-    description: "A platform that combines text and image processing capabilities using GPT-3.5 for text generation, CLIP for image understanding, and Stable Diffusion with LoRA fine-tuning for customized image generation.",
-    imageUrl: "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    tags: ["Multimodal", "Image Generation", "Text-to-Image"],
-    technologies: ["GPT-3.5", "CLIP", "Stable Diffusion", "LoRA", "PyTorch", "React"],
-    github: "https://github.com/kirankumar/multimodal-ai",
+    github: "https://github.com/moseskiran006/Ai_news_agent"
   },
   {
     id: 3,
-    title: "Computer Vision for Smart Retail",
-    description: "A retail analytics system using computer vision to track customer flow, analyze product interactions, and optimize store layouts. Features real-time heat maps and product attention metrics.",
+    title: "ScholarQuery",
+    description: "A smart querying tool to fetch PubMed research papers and identify authors affiliated with pharmaceutical or biotech companies, with support for advanced PubMed queries, CSV export, and CLI-based usage.",
+    imageUrl: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    tags: ["Research", "Biomedical NLP", "CLI Tool"],
+    technologies: ["Python", "Biopython", "pandas", "Poetry", "Typing", "Logging"],
+    github: "https://github.com/moseskiran006/ScholarQuery"
+  }
+  ,
+  {
+    id: 3,
+    title: "Vehicle Number Plate Detection in real time  ",
+    description: "A retail analytics system using computer vision to track and detect Vehicle Number plates in real time. It uses YOLOv9 for object detection, analyze  images, and store data in a MongoDB database.",
     imageUrl: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     tags: ["Computer Vision", "Retail Analytics", "Real-time"],
-    technologies: ["YOLOv8", "OpenCV", "TensorFlow", "Python", "MongoDB"],
-    github: "https://github.com/kirankumar/retail-vision",
-    demo: "https://retail-vision.example.com",
+    technologies: ["YOLOv9", "OpenCV", "TensorFlow", "Python", "MongoDB"],
+    github: "https://github.com/moseskiran006/object-detection"
+    
   },
 ];
 

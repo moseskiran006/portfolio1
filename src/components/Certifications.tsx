@@ -20,26 +20,20 @@ interface LeadershipItem {
 }
 
 const certificationsData: CertificationItem[] = [
+  
   {
     id: 1,
-    title: "AWS Certified Machine Learning Specialist",
-    issuer: "Amazon Web Services",
-    date: "2024",
-    credentialUrl: "https://aws.amazon.com/certification/certified-machine-learning-specialty/",
-  },
-  {
-    id: 2,
     title: "IBM Data Science Professional Certificate",
     issuer: "IBM via Coursera",
     date: "2024",
-    credentialUrl: "https://www.coursera.org/professional-certificates/ibm-data-science",
+   
   },
   {
     id: 3,
-    title: "TensorFlow Developer Certificate",
-    issuer: "Google",
+    title: "Devops by IBM",
+    issuer: "Coursera",
     date: "2023",
-    credentialUrl: "https://www.tensorflow.org/certificate",
+    
   },
 ];
 

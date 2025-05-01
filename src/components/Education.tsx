@@ -17,8 +17,8 @@ const educationData: EducationItem[] = [
     id: 1,
     institution: "IIITDM Kurnool",
     degree: "B.Tech in AI & Data Science",
-    years: "2021 - 2025",
-    grade: "CGPA: 7.0",
+    years: "November-2021 to April-2025",
+    grade: "CGPA: 6.7",
     description: "Coursework in Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, and Data Mining. Active member of the AI/ML Club.",
   },
   {
@@ -29,6 +29,15 @@ const educationData: EducationItem[] = [
     grade: "CGPA: 9.03",
     description: "Majored in Mathematics, Physics, and Chemistry with a focus on computer sciences. Participated in various technical competitions.",
   },
+  {
+    id: 3,
+    institution: "Prathiba Vidya Nikethan",
+    degree: "Secondary School  Certificate (SSC)",
+    years: "2017",
+    grade: "CGPA: 9.8",
+    description: "Majored in Telugu, Hindi, English, Mathematics, Physics, and Chemistry "
+  }
+  
 ];
 
 const Education: React.FC = () => {

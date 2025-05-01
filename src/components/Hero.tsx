@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
           >
-            AI/ML Engineer • NLP Specialist • Computer Vision Developer
+            AI/ML Engineer • NLP Specialist • Computer Vision Developer • Data Science
           </motion.p>
           
           <motion.div 

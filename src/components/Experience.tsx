@@ -16,18 +16,18 @@ const experienceData: ExperienceItem[] = [
   {
     id: 1,
     company: "AM Global",
-    role: "AI/ML Engineer",
-    period: "2024",
-    description: "Developed computer vision solutions for industrial automation using YOLOv10 for object detection and EasyOCR for text recognition. Deployed models on AWS infrastructure.",
+    role: "Computer Vision  Engineer",
+    period: "June-2024 to December-2024",
+    description: "Developed computer vision solutions for industrial automation using YOLOv9 for object detection and EasyOCR for text recognition. Deployed models on AWS infrastructure.",
     technologies: ["YOLOv10", "EasyOCR", "FastAPI", "AWS", "Docker"],
   },
   {
     id: 2,
     company: "Acmegrade",
-    role: "NLP Engineer",
-    period: "2023",
-    description: "Built Retrieval-Augmented Generation (RAG) pipelines for customer support systems. Implemented dense retrievers with FAISS for efficient vector search and improved query understanding.",
-    technologies: ["RAG", "FAISS", "HuggingFace", "PyTorch", "Transformers"],
+    role: "Machine Learning Intern",
+    period: "May-2023 to September-2023",
+    description: "Worked on Deep Learning Model for Text Classification using RAG and Transformers. Deployed the model on Docker",
+    technologies: ["RAG", "HuggingFace", "PyTorch", "Transformers"],
   },
 ];
 
