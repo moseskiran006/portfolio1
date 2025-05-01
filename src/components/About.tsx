@@ -54,8 +54,11 @@ const About: React.FC = () => {
             >
               <div className="md:col-span-1">
                 <div className="relative rounded-2xl overflow-hidden aspect-square bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                  <div className="text-6xl md:text-8xl font-bold text-gradient">KP</div>
-                  <div className="absolute inset-0 border border-gray-700 rounded-2xl"></div>
+                  <img
+                    src="https://raw.githubusercontent.com/moseskiran006/portfolio1/main/official_pic.jpg"
+                    alt="Kiran Kumar Pilli"
+                    className="w-full h-full object-cover rounded-2xl border border-gray-700"
+                  />
                 </div>
               </div>
               
@@ -65,7 +68,7 @@ const About: React.FC = () => {
                   AI/ML Engineer and NLP Specialist passionate about building intelligent systems that solve real-world problems.
                 </p>
                 <p className="text-gray-400 mb-6">
-                  Graduated B.Tech Student  in AI & DS at IIITDM Kurnool, I specialize in developing AI solutions across computer vision, natural language processing, and machine learning systems. I'm particularly interested in multimodal AI and large language models.
+                  Graduated B.Tech Student in AI & DS at IIITDM Kurnool, I specialize in developing AI solutions across computer vision, natural language processing, and machine learning systems. I'm particularly interested in multimodal AI and large language models.
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
